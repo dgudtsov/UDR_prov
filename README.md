@@ -1,5 +1,5 @@
 # UDR_prov
-Oracle UDR provisioning tool
+Oracle UDR bulk provisioning tool
 
 ## Import
 
