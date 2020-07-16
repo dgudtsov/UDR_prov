@@ -2,6 +2,9 @@
 Oracle UDR provisioning tool
 
 ## Import
+
+NOTE: import source file must be sorted before processing!
+
 example of usage:
 
 $ ./udr_import.py -a create_ent import/import_example.txt.gz
