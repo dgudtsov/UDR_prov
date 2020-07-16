@@ -1,6 +1,7 @@
 # UDR_prov
 Oracle UDR provisioning tool
 
+## Import
 example of usage:
 
 $ ./udr_import.py -a create_ent import/import_example.txt.gz
@@ -16,3 +17,10 @@ file statistics:
 }
 processing file is done
 
+importing result will be created inside output directory
+
+
+## Export
+$	./udr_import.py -n -x udr_export_filename.exml.gz
+
+exporting result will be created inside output directory
