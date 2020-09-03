@@ -106,6 +106,25 @@ xml_template_subs_with_ent="""
 </createSubscriber>
 """.replace("\n", "")
 
+# Update subs field with MSISDN
+xml_template_field_update="""
+<updateField clearAll="false">
+<key>
+<MSISDN>{KEY}</MSISDN>
+</key>
+<entity>
+<data>
+<name>Subscriber</name>
+<interface>XMLIMPORT</interface>
+<xpath>/subscriber</xpath>
+</data>
+<fields>
+<field name="Entitlement">{Entitlement}</field>
+</fields>
+</entity>
+</updateField>
+""".replace("\n", "")
+
 
 xml_template_replace_subs_and_end="<transaction><txRequest id=\"1\">"+xml_template_delete_subs+"</txRequest><txRequest id=\"2\">"+xml_template_subs_with_ent+"</txRequest></transaction>"
 
@@ -117,4 +136,5 @@ xml_template = {
     ,'create_ent' : xml_template_subs_with_ent
     ,'replace_ent': xml_template_replace_subs_and_end
     ,'delete_state' : xml_template_delete_state
+    ,'update_field' : xml_template_field_update
     }

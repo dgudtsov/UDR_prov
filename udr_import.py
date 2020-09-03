@@ -191,7 +191,7 @@ class Bulk(object):
                         new_key, ent = prefix+'{}'.format(data_list[0]) , data_list[1:]
 
                         
-                        if new_key==old_key or len(entitlements)==0:
+                        if ((new_key==old_key or len(entitlements)==0) and len(ent)>0):
 #                            entitlements.append(ent)
                             entitlements=entitlements+ent                        
                         else:
