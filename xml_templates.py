@@ -137,4 +137,5 @@ xml_template = {
     ,'replace_ent': xml_template_replace_subs_and_end
     ,'delete_state' : xml_template_delete_state
     ,'update_field' : xml_template_field_update
+    ,'create' : xml_template_subs
     }
